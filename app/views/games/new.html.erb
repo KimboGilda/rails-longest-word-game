@@ -1,15 +1,19 @@
 <div id="new-game">
-<div class="letters-container">
-<h1>New Game</h1>
-<h2>Random letters</h2>
-<% @letters.each do |letter| %>
-  <%= letter.capitalize %>
-<% end %>
-</div>
+  <div class="letters-container">
+    <h1>New Game</h1>
+    <h2>Random letters</h2>
+    <div class="letters">
+      <% @letters.each do |letter| %>
+        <span class="letter"><%= letter %></span>
+      <% end %>
+    </div>
+  </div>
 
-<div class="form-container">
-<p>What is the longest word you can find?</p>
-<input type="text" id="name" name="name" />
-<input type="submit" value="Play">
-</div>
+  <div class="form-container">
+    <p>What is the longest word you can find?</p>
+    <div class="form">
+    <input type="text" id="name" name="name" />
+    <input type="submit" value="Play">
+    </div>
+  </div>
 </div>

@@ -3,3 +3,45 @@
   margin-left: 20px;
   width: 35vw;
 }
+
+.letters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.letter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(72, 72, 232);
+  color: white;
+  font-size: 16px;
+  width: 35px;
+  height: 35px;
+  margin: 5px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.form-container {
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  width: 100%;
+}
+
+.form input[type="text"] {
+  flex-grow: 1;
+  padding: 5px;
+  font-size: 1rem;
+}
+
+.form input[type="submit"] {
+  flex-shrink: 0;
+}
